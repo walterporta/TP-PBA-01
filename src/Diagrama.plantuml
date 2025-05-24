@@ -126,10 +126,11 @@ Celda "1" -- "many" Objeto : contiene
 Personaje "1" -- "1" Posicion : tiene
 
 Enemigo <|.. Guardia : implementa
+Enemigo <|.. MetalGear : implementa
 
 Personaje <|-- Guardia
 Personaje <|-- Snake
 
-Objeto <|-- MetalGear
+Personaje <|-- MetalGear
 
 @enduml
