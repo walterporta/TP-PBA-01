@@ -78,7 +78,10 @@ class Celda {
 }
 
 abstract class Personaje {
-    +mover()
+    #nombre: String
+    #vida: int
+    #posicion: Posicion[][]
+    #mover()
 }
 ' Posicion Es una clase o atriburo de personajes e items?
 class Posicion { 
@@ -91,9 +94,7 @@ interface Enemigo {
 }
 
 class Guardia {
-    + nombre: String
-    + vida: int
-    + posicion: Posicion[][]
+    
 }
 
 class Snake {
