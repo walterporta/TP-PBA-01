@@ -59,6 +59,7 @@ class MisionIntermedia {
 
 class MisionFinal {
     iniciar()
+    
 }
 
 class Mapa {
@@ -68,7 +69,7 @@ class Mapa {
     + snake: snake[*] 
     ' no se por qué instanciar snake aqui
     +colocarPersonaje()
-    +moverPersonaje()
+    ' +moverPersonaje()
     +mostrar()
 }
 
@@ -82,6 +83,8 @@ abstract class Personaje {
     # vida: int
     # posicion: Posicion[][]
     # mover()
+    # disparar()
+    # esquivar()
 }
 ' Posicion Es una clase o atriburo de personajes e items?
 class Posicion { 
@@ -91,6 +94,10 @@ class Posicion {
 }
 
 interface Enemigo {
+    moverArriba()
+    moverAbajo()
+    moverIzquierda()
+    moverDerecha()
 }
 
 class Guardia {
