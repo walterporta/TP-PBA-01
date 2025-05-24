@@ -1,4 +1,37 @@
 @startuml
+' Estilo general del fondo y líneas
+skinparam backgroundColor #fdf6e3
+skinparam class {
+    BackgroundColor #fefefa
+    BorderColor #586e75
+    ArrowColor #268bd2
+    FontColor #002b36
+    FontName "Ubuntu"
+    FontSize 12
+    RoundCorner 15
+}
+
+' Estilo para interfaces
+skinparam interface {
+    BackgroundColor #e3f6fd
+    BorderColor #268bd2
+}
+
+' Estilo para clases abstractas
+skinparam class {
+    BackgroundColor<<abstract>> #fceada
+    BorderColor<<abstract>> #cb4b16
+    FontColor<<abstract>> #cb4b16
+}
+
+' Estilo para clases concretas
+skinparam class {
+    BackgroundColor<<concreta>> #e0f8e3
+    BorderColor<<concreta>> #2aa198
+}
+
+' Estilo para relaciones
+skinparam ArrowColor #657b83
 
 ' Definición de las clases y sus miembros
 class Juego {
@@ -6,18 +39,21 @@ class Juego {
 }
 
 abstract class Mision {
-    +zonalibreinicial: int
-    +recogec4: int
-    +misioncumplida: int
+    +misioncumplida: boolean
     +iniciarjuego()
 }
 
 class MisionInicial {
+    +zonalibreinicial: int
     +recogellave: boolean
+    ' la llave sería un item (Objeto)??
     iniciar()
 }
 
 class MisionIntermedia {
+    +zonalibreinicial: int
+    +recogec4: int 
+    ' analizar recogec4 así como el caso de puerta abierta o cerrada
     iniciar()
 }
 
@@ -26,6 +62,11 @@ class MisionFinal {
 }
 
 class Mapa {
+    + filas: int
+    + columnas: int
+    + celda: celdas[]
+    + snake: snake[*] 
+    ' no se por qué instanciar snake aqui
     +colocarPersonaje()
     +moverPersonaje()
     +mostrar()
@@ -39,8 +80,9 @@ class Celda {
 abstract class Personaje {
     +mover()
 }
-
-class Posicion {
+' Posicion Es una clase o atriburo de personajes e items?
+class Posicion { 
+    
     +getX()
     +getY()
 }
@@ -49,14 +91,19 @@ interface Enemigo {
 }
 
 class Guardia {
+    + nombre: String
+    + vida: int
+    + posicion: Posicion[][]
 }
 
 class Snake {
 }
 
 class Objeto {
+    ' objetos posibles: llave? C4? puerta? 
     +getTipo()
-    +recoger()
+    +recoger() 
+' yo quitaría recoger, con el solo hecho de caer en la celda consideraría recodido lo que haya en esa celda
 }
 
 class MetalGear {
