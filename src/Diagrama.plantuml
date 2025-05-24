@@ -1,0 +1,87 @@
+@startuml
+
+' Definición de las clases y sus miembros
+class Juego {
+    iniciar()
+}
+
+abstract class Mision {
+    +zonalibreinicial: int
+    +recogec4: int
+    +misioncumplida: int
+    +iniciarjuego()
+}
+
+class MisionInicial {
+    +recogellave: boolean
+    iniciar()
+}
+
+class MisionIntermedia {
+    iniciar()
+}
+
+class MisionFinal {
+    iniciar()
+}
+
+class Mapa {
+    +colocarPersonaje()
+    +moverPersonaje()
+    +mostrar()
+}
+
+class Celda {
+    +getPersonaje()
+    +setPersonaje()
+}
+
+abstract class Personaje {
+    +mover()
+}
+
+class Posicion {
+    +getX()
+    +getY()
+}
+
+interface Enemigo {
+}
+
+class Guardia {
+}
+
+class Snake {
+}
+
+class Objeto {
+    +getTipo()
+    +recoger()
+}
+
+class MetalGear {
+}
+
+' Definición de las relaciones
+Juego "1" --> "1" Mision : invoca
+Juego "1" --> "1" Mapa : tiene
+
+Mision <|-- MisionInicial
+Mision <|-- MisionIntermedia
+Mision <|-- MisionFinal
+
+Mapa "1" -- "many" Celda : contiene
+
+Celda "1" -- "1" Personaje : contiene
+Celda "1" -- "many" Objeto : contiene
+
+Personaje "1" -- "1" Posicion : tiene
+
+Enemigo <|.. Guardia : implementa
+
+Personaje <|-- Guardia
+Personaje <|-- Snake
+
+Objeto <|-- MetalGear
+
+@enduml
