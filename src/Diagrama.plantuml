@@ -78,10 +78,10 @@ class Celda {
 }
 
 abstract class Personaje {
-    #nombre: String
-    #vida: int
-    #posicion: Posicion[][]
-    #mover()
+    # nombre: String
+    # vida: int
+    # posicion: Posicion[][]
+    # mover()
 }
 ' Posicion Es una clase o atriburo de personajes e items?
 class Posicion { 
