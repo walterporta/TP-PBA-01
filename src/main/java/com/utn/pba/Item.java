@@ -1,3 +1,5 @@
+package com.utn.pba;
+
 public class Item {
     private String nombre;
     private char simbolo;

@@ -1,3 +1,5 @@
+package com.utn.pba;
+
 public class Celda {
     private Snake snake;
     private Guardia[] guardias = new Guardia[05]; // Tamaño fijo

@@ -1,3 +1,5 @@
+package com.utn.pba;
+
 public class Posicion {
     private int x;
     private int y;

@@ -1,3 +1,5 @@
+package com.utn.pba;
+
 public class Mapa {
     private final int filas;
     private final int columnas;

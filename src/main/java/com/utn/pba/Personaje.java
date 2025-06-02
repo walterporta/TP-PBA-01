@@ -1,3 +1,4 @@
+package com.utn.pba;
 
 public abstract class Personaje {
     protected String nombre;
