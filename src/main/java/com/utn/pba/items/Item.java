@@ -1,4 +1,4 @@
-package com.utn.pba;
+package com.utn.pba.items;
 
 public class Item {
     private String nombre;

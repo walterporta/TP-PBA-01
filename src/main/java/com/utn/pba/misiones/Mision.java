@@ -1,4 +1,8 @@
-package com.utn.pba;
+package com.utn.pba.misiones;
+
+import com.utn.pba.mapa.Mapa;
+import com.utn.pba.mapa.Posicion;
+import com.utn.pba.personajes.Snake;
 
 public abstract class Mision {
     protected boolean completada;

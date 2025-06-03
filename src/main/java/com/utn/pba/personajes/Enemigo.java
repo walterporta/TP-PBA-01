@@ -1,4 +1,4 @@
-package com.utn.pba;
+package com.utn.pba.personajes;
 
 public interface Enemigo {
 

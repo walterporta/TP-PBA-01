@@ -1,4 +1,6 @@
-package com.utn.pba;
+package com.utn.pba.personajes;
+
+import com.utn.pba.mapa.Posicion;
 
 public class Snake extends Personaje {
 

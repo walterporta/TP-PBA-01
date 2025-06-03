@@ -1,4 +1,8 @@
-package com.utn.pba;
+package com.utn.pba.mapa;
+
+import com.utn.pba.items.Item;
+import com.utn.pba.personajes.Guardia;
+import com.utn.pba.personajes.Snake;
 
 public class Mapa {
     private final int filas;

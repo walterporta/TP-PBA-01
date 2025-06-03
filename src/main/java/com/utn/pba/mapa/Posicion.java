@@ -1,4 +1,4 @@
-package com.utn.pba;
+package com.utn.pba.mapa;
 
 public class Posicion {
     private int x;

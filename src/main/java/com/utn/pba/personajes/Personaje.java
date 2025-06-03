@@ -1,4 +1,6 @@
-package com.utn.pba;
+package com.utn.pba.personajes;
+
+import com.utn.pba.mapa.Posicion;
 
 public abstract class Personaje {
     protected String nombre;
