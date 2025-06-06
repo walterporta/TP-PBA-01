@@ -15,11 +15,11 @@ public class Guardia extends Personaje implements Enemigo {
 
     @Override
     public void patrullar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        System.out.println("Guardia patrullando");
     }
 
     @Override
     public void atacar(Snake snake) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        System.out.println("Guardia ataca a Snake");
     }
 }

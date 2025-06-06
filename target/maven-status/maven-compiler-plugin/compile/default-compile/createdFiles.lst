@@ -2,9 +2,10 @@ com/utn/pba/mapa/Posicion.class
 com/utn/pba/mapa/Mapa.class
 com/utn/pba/personajes/Enemigo.class
 com/utn/pba/misiones/Mision.class
+com/utn/pba/Main.class
 com/utn/pba/personajes/Personaje.class
+com/utn/pba/juego/Juego.class
 com/utn/pba/mapa/Celda.class
 com/utn/pba/personajes/Guardia.class
-com/utn/pba/Juego.class
 com/utn/pba/personajes/Snake.class
 com/utn/pba/items/Item.class

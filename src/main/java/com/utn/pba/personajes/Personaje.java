@@ -30,4 +30,10 @@ public abstract class Personaje {
     public void setVida(int vida) {
         this.vida = vida;
     }
+
+    public void setPosicion(Posicion posicion) {
+        this.posicion = posicion;
+    }  
+
+
 }
