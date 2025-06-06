@@ -1,0 +1,25 @@
+package com.utn.pba.personajes;
+
+import com.utn.pba.mapa.Posicion;
+
+public class Guardia extends Personaje implements Enemigo {
+
+    public Guardia(Posicion posicion) {
+        super("Guardia", 100, posicion);
+    }
+
+    @Override
+    public void mover(int dx, int dy) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void patrullar() {
+        System.out.println("Guardia patrullando");
+    }
+
+    @Override
+    public void atacar(Snake snake) {
+        System.out.println("Guardia ataca a Snake");
+    }
+}
